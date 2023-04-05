@@ -69,7 +69,7 @@ body {
   padding: 0;
   justify-content: center;
   margin: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -153,8 +153,6 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .site-nav {
@@ -181,12 +179,13 @@ body {
   margin-right: 50px;
 }
 
-.site-nav .list {
+.site-nav.list {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  margin-right: 50px;
 }
 
 .site-nav:hover,
@@ -216,6 +215,10 @@ body {
 }
 
 .contacts.list .mail {
+  margin-right: 50px;
+}
+
+.site-nav.list .item {
   margin-right: 50px;
 }
 
@@ -251,6 +254,14 @@ body {
   margin: 0 auto;
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient();
+}
+
 .block.secondary {
   background-color: var(--secondary-button-color);
 }
@@ -284,7 +295,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .text {
@@ -299,12 +310,15 @@ body {
   font-size: 16px;
   line-height: 1.2;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .prof {
   text-align: center;
   font-size: 16px;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .link {
@@ -318,6 +332,7 @@ body {
   line-height: 2;
   text-decoration: none;
   margin-bottom: 4px;
+  margin-top: 0;
 }
 
 .discr {
@@ -325,6 +340,8 @@ body {
   font-size: 16px;
   line-height: 1.9;
   text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .button.primary {
@@ -374,7 +391,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
-  margin-bottom: 9px;
+  margin-top: 9px;
 }
 
 footer .logo {
@@ -386,18 +403,24 @@ footer .logo {
   margin-bottom: 20px;
 }
 
+.adres {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.email {
+  margin-bottom: 9px;
+}
+
 footer .contacts {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
 }
 
 .footer-list {
   list-style: none;
   padding-left: 0;
   padding: 0;
-  margin-left: 0;
-  margin: 0;
 }
