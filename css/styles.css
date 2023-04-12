@@ -130,9 +130,7 @@ body {
   width: 270px;
 }
 
-.plan-list-item {
-  margin-right: 30px;
-}
+
 
 .plan-list {
   list-style: none;
@@ -143,6 +141,7 @@ margin-right: 30px;
   padding: 0;
   margin-left: 0;
   margin: 0;
+  gap: 30px;
 }
 
 .gallery {
@@ -189,8 +188,7 @@ margin-right: 30px;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  margin-right: 50px;
-  
+  gap: 50px;
 }
 
 .site-nav:hover,
@@ -214,11 +212,7 @@ margin-right: 30px;
   color: var(--accent-color);
 }
 
-.contacts.list {
-  display: flex;
-  margin-left: auto;
-  
-}
+
 
 .contacts.list .mail {
   margin-right: 50px;
@@ -235,6 +229,13 @@ margin-right: 30px;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  margin-left: auto;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: auto;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
 }
 
 .contacts:hover,
@@ -263,9 +264,10 @@ margin-right: 30px;
 .hero-block.overlay {
   max-width: 1600px;
   height: 600px;
+  outline: 1px solid black;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient (to right rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  background-image: linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
    url("../images/Img-backgr.jpg");
    background-size: cover;
    background-repeat: no-repeat;
@@ -305,7 +307,7 @@ margin-right: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-top: 0;
 }
 
@@ -373,11 +375,16 @@ margin-right: 30px;
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  
 }
 
 .button.secondary.blue {
   background-color: var(--accent-color);
   color: var(--title-text-color);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .accent {
@@ -389,6 +396,8 @@ margin-right: 30px;
   color: var(--title-text-color);
   background-color: var(--accent-color);
 }
+
+/* footer */
 
 .footer-block {
   background-color: var(--background-color-main);
@@ -402,7 +411,7 @@ margin-right: 30px;
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
-  margin-top: 9px;
+  margin-top: 20px;
 }
 
 footer .logo {
@@ -411,7 +420,7 @@ footer .logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  margin-bottom: 20px;
+ 
 }
 
 .adres {
@@ -434,4 +443,42 @@ footer .contacts {
   list-style: none;
   padding-left: 0;
   padding: 0;
+}
+
+.social-list_item-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-instagram {
+background-image: url("./images/icons.svg");
+}
+
+.actions {
+  display: flex;
+  width: 44px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.button-action {
+  padding: 0;
+  border: 0;
+}
+
+.button-icon {
+  width: 44px;
+  height: 44px;
+  color: white;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.button-action:hover {
+  color: white;
 }
